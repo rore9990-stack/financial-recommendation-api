@@ -46,6 +46,9 @@ def recommend():
     recommendation = model.predict(features)[0]
 
     return jsonify({'recommendation': recommendation})
+@app.route('/')
+def home():
+    return "Financial Recommendation API is running!"
 
 if __name__ == '__main__':
     app.run(debug=True)

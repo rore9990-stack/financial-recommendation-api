@@ -5,11 +5,13 @@ import joblib
 app = Flask(__name__)
 
 def get_user_data(user_id):
-    conn = mysql.connector.connect(
+        conn = mysql.connector.connect(
         host="fdb1027.biz.nf",
-        user="your_db_user",
-        password="your_db_password",
-        database="your_db_name"
+        user="4515138_maly",
+        password="Ro0597980060-",
+        database="4515138_maly"
+
+
     )
     cursor = conn.cursor(dictionary=True)
     cursor.execute("SELECT income FROM users WHERE id = %s", (user_id,))

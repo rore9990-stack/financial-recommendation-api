@@ -60,6 +60,6 @@ for _, user in users_df.iterrows():
 model = RandomForestClassifier()
 model.fit(features, labels)
 
-# حفظ النموذج
-joblib.dump(model, 'model.pkl')
-print("✅ تم تدريب النموذج وحفظه بنجاح.")
+# حفظ النموذج باسم financial_model.pkl
+joblib.dump(model, 'financial_model.pkl')
+print("✅ تم تدريب النموذج وحفظه بنجاح باسم financial_model.pkl.")

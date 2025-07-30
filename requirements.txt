@@ -1,6 +1,6 @@
 Flask
 mysql-connector-python
-joblib
 scikit-learn
 pandas
-gunicorn
+joblib
+flask_cors

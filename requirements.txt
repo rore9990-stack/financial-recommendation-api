@@ -1,5 +1,6 @@
-flask
+Flask
 mysql-connector-python
 joblib
 scikit-learn
+pandas
 gunicorn
